@@ -44,4 +44,21 @@ public class TriangleIT {
         
     }
     
+     /**
+     * Test of triType method, of class Triangle.
+     */
+    @org.junit.Test
+    public void testTriTypeFail() {
+        System.out.println("triType");
+        int i = 5;
+        int j = 5;
+        int k = -3;
+        Triangle instance = new Triangle();
+        int expResult = 3;
+        int result = instance.triType(i, j, k);
+        assertEquals(expResult, result);
+        fail("fail test");
+        
+    }
+    
 }
